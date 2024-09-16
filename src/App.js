@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="info-card">
+        <h1>Олександр Петрович</h1>
+        <p className="title">Full Stack Developer</p>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <strong>Телефон:</strong> +380 66 123 4567
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          <strong>Email:</strong> example@example.com
+        </p>
+        <p>
+          <strong>Локація:</strong> Київ, Україна
+        </p>
+        <p>
+          <strong>Досвід роботи:</strong> 5 років
+        </p>
+        <p>
+          <strong>Навички:</strong> JavaScript, React, Node.js, HTML, CSS
+        </p>
+        <div className="social-media">
+          <a
+            href="https://www.linkedin.com/in/example"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a href="https://github.com/example" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
